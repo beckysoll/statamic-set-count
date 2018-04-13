@@ -33,7 +33,7 @@ my_bard_field:
 There are {{ my_bard_field | set_count:text }} text sets.<br>
 There are {{ my_bard_field | set_count:columns }} columns sets.<br>
 There are {{ my_bard_field | set_count }} total sets.<br>
-{{ if ( my_bard_field | set_count:pull_quote ) > 1 }}We've got a pull quote!{{ /if }}
+{{ if ( my_bard_field | set_count:pull_quote ) > 0 }}We've got a pull quote!{{ /if }}
 ```
 
 ### Outputs
