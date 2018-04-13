@@ -1,0 +1,7 @@
+name: SetCount
+version: "1.0"
+description: >
+  A statamic 2.0 modifier to count the number of sets (by type) within a bard field.
+url: https://github.com/beckysoll/statamic-set-count
+developer: Becky Soll
+developer_url: www.beckysoll.com
