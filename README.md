@@ -46,3 +46,9 @@ We've got a pull quote!
 ```
 
 _Tasty ipsum provided by http://www.cheeseipsum.co.uk/_
+
+## Changelog
+
+### 1.0.1
+
+The modifier will now work with inception Bards, and will count the number of sets regardless of how many levels deep the inception goes.
