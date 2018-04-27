@@ -16,6 +16,12 @@ class SetCountModifier extends Modifier
      */
     public function index($value, $params, $context)
     {
-        return ($param = array_get($params, 0)) ? (count(array_filter($value, function($sets) use ($param) {return $sets['type'] == $param;}))) : (count($value));
+
+        $arrayFlat = array_dot($value);
+        $arrayTypes = array_intersect_key($arrayFlat,array_flip(preg_grep('/\.type$/',array_keys($arrayFlat))));
+
+        return ($param1 = array_get($params, 0)) ? (count(array_filter($arrayTypes, function($sets) use ($param1) {return $sets == $param1;}))) : (count($value));
+
     }
+
 }
