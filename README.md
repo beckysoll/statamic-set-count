@@ -1,5 +1,5 @@
 # statamic-set-count
-A statamic 2.0 modifier to count the number of sets (by type) within a bard field.
+A statamic 2.0 modifier used to count the number of sets (by type) within a bard field.
 
 Copy `SetCount` folder into `/site/addons/`.
 
